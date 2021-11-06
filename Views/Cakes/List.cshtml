@@ -1,0 +1,9 @@
+﻿<h1>Вся выпечка</h1>
+ <h3>@Model.cakeCategory</h3>
+<div class="row nt-3 mb-lg-4">
+    @{ 
+        foreach (Cake cake in Model.AllCakes) { 
+            @Html.Partial("AllCakes", cake)
+        }
+     }
+</div>
